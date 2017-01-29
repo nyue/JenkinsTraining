@@ -6,6 +6,9 @@ try:
 except ImportError:
     import unittest
 
+import MyClass
+import YourClass
+
 class SimpleTest(unittest.TestCase):
     @unittest.skip("demonstrating skipping")
     def test_skipped(self):
@@ -20,6 +23,5 @@ class SimpleTest(unittest.TestCase):
 class MyClassTest(unittest.TestCase):
 
     def test_creation(self):
-        import MyClass
         mc = MyClass.MyClass()
         self.assertEqual(mc.value,1)
