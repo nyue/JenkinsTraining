@@ -16,3 +16,10 @@ class SimpleTest(unittest.TestCase):
 
 #    def test_fail(self):
 #        self.assertEqual(11, 7 + 3)
+
+class MyClassTest(unittest.TestCase):
+
+    def test_creation(self):
+        import MyClass
+        mc = MyClass.MyClass()
+        self.assertEqual(mc.value,1)
