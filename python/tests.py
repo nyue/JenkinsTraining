@@ -25,3 +25,9 @@ class MyClassTest(unittest.TestCase):
     def test_creation(self):
         mc = MyClass.MyClass()
         self.assertEqual(mc.value,1)
+
+class YourClassTest(unittest.TestCase):
+
+    def test_creation(self):
+        mc = YourClass.YourClass()
+        self.assertEqual(mc.value,2)
